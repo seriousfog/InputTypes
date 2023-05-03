@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Types</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>The Reed's Rhymed Rizzeria</h1>
+        <h4>321 West Yelk Ave.</h4>
+
+
+        <form>
+            <div class="row">
+                <div>
+                    <label for="firstname">First</label>
+                    <input id="firstname" name="first_name" type="text">
+                </div>
+                <div>
+                    <label for="lastname">Last</label>
+                    <input id="lastname" name="last_name" type="text">
+                </div>
+            </div>
+
+            <div class="row">
+                <fieldset>
+                    <legend>Type:</legend>
+                    <div>
+                        <div>
+                            <input type="radio" id="cheese" name="pizza">
+                            <label for="cheese">Cheese</label>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="radio" id="pepperoni" name="pizza">
+                                <label for="pepperoni">Pepperoni</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="radio" id="veggie" name="pizza">
+                                <label for="veggie">Veggie</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="meat" name="pizza">
+                                <label for="meat">Meat</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <br>
+
+            <fieldset>
+                <legend>Size:</legend>
+                <div>
+                    <div>
+                        <input type="radio" id="small" name="size">
+                        <label for="small">Small</label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input type="radio" id="medium" name="size">
+                        <label for="medium">Medium</label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input type="radio" id="large" name="size">
+                        <label for="large">Large</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Extra Toppings:</legend>
+                <div>
+                    <div>
+                        <input type="checkbox" id="blackolive" name="blackolive" value="blackolive">
+                        <label for="blackolive">Black Olives</label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+                        <label for="mushrooms">Sliced Mushrooms</label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input type="checkbox" id="redpeppers" name="redpeppers" value="redpeppers">
+                        <label for="redpeppers">Red Peppers</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Delivery or Pickup:</legend>
+                <div>
+                    <label for="pizzaget">Please Choose One.</label>
+                    <select name="pizzaget" id="pizzaget">
+                        <option value="Delivery">Delivery</option>
+                        <option value="Pickup">Pickup</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Special:</legend>
+                <div>
+                    <label for="adress">Address:</label>
+                    <textarea id="adress" name="adress" rows="4" cols="10" placeholder="If picked delivery, please put in your address"></textarea>
+                </div>
+            </fieldset>
+            <button type="button" onclick="alert('This is FREE today for our GRAND OPENING!!!')">Calculate Cost</button>
+            <button type="submit">Finalize Order</button>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
